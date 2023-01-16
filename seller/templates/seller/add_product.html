@@ -1,0 +1,42 @@
+{% extends 'seller/seller_home.html' %}
+{% load static %}
+
+    {% block header %}
+	<link href="{% static 'css/add_product.css' %}" rel="stylesheet">
+
+{% endblock %}
+    
+{% block content %}
+<div class="col-lg-6" style="margin-left: 500px; color:rgb(24, 34, 31);"><br />
+                
+  <h2 style="color: rgb(20, 69, 54);" ><b><i>SELL NEW PRODUCT</i></b></h2><br />
+ 
+  <div class="mb-5">
+    <form method="POST" enctype="multipart/form-data">
+     {% csrf_token %}
+      <label for="exampleFormControlInput1" class="form-label "><b>PRODUCT NAME</b></label>
+      <input type="text" class="form-control" id="exampleFormControlInput1" name="pname" placeholder=""><br />
+      <label for="exampleFormControlInput2" class="form-label"><b>DESCRIPTION</b></label>
+      <input type="text" class="form-control" id="exampleFormControlInput1" name="desc" placeholder=""><br />
+      <label for="exampleFormControlInput2" class="form-label"><b>PRODUCT NUMBER</b></label>
+      <input type="text" class="form-control" id="exampleFormControlInput1" name="pnumber" placeholder=""><br />
+      <label for="exampleFormControlInput2" class="form-label"><b>UPLOAD IMAGE</b></label>&nbsp;&nbsp;&nbsp;&nbsp; 
+          <input type="file" id="exampleFormControlInput1" name="filename"><br /><br />
+          
+      <label for="exampleFormControlInput2" class="form-label"><b>PRICE</b></label>
+      <input type="text" class="form-control" id="exampleFormControlInput1" name="price" placeholder=""><br />
+      <label for="exampleFormControlInput2" class="form-label"><b>CURRENT STOCK</b></label>
+      <input type="text" class="form-control" id="exampleFormControlInput1" name="stock" placeholder=""><br />
+      
+      
+
+      
+      <center><br />
+      <button type="submit" class="registerbtn" style="width: 30%;">ADD</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </center>
+      <br /><br />
+      </form>
+  </div>
+  
+</div>   
+{% endblock %}

@@ -1,0 +1,54 @@
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: rgb(250, 247, 248);  
+}  
+form{
+  width: 500px;
+  padding-top: 15px;
+  border-radius: 10px;
+}
+.container{  
+  padding: 30px;  
+  background-color: rgb(107, 180, 139);
+  border-radius: 20px;  
+}  
+  
+input[type=text], input[type=password],input[type=number], textarea {  
+  width: 150px;
+  height: 20px;
+  border-radius: 10px;  
+  padding: 10px;  
+  margin: 2px 0 10px 0;  
+  /* display: inline-block;   */
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text], input[type=password]{  
+  background-color: rgb(235, 245, 239);  
+  /* outline: none;   */
+}  
+div{  
+  padding: 10px 0;  
+  }  
+#hr1{  
+  border: 5px solid #f1f1f1;  
+  margin-bottom: 35px;  
+}  
+.registerbtn{  
+  background-color: rgb(6, 46, 23);  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 30%; 
+  border-radius: 20px; 
+  opacity: 0.9; 
+   
+}  
+.registerbtn:hover{  
+  opacity: 1;  
+} 
+h1{
+  padding-left: 300px;
+}

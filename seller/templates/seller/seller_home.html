@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="{% static 'css/seller_home.css' %}" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    {% block header %}
+
+    {% endblock %}
+  </head>
+  <body style="background-color: rgb(53, 190, 128)">
+
+    <div class="parent">
+      
+      <div class="div1">
+      <img src="{{seller_prof.seller_pic.url}}" alt=""height="150px" width="200px">
+      </div><br />
+      <div class="div2">
+        <a href="{% url 'seller:sellhome' %}" class="navbar-vertical-content text-white" style="text-decoration: none;"><h6><CENTER>HOME</CENTER></h6></a>
+      </div><hr>
+      <div class="div2">
+        <a href="{% url 'seller:sellpro' %}" class="navbar-vertical-content text-white" style="text-decoration: none;"><h6><CENTER>PROFILE</CENTER></h6></a>
+      </div><hr>
+      <div class="div3">
+        <a href="{% url 'seller:ordrhist' %}" class="navbar-vertical-content text-white" style="text-decoration: none;"><h6><center>ORDER HISTORY</center></h6></a>
+      </div><hr>
+      <div class="div4">
+        <a href="{% url 'seller:prodcata' %}" class="navbar-vertical-content text-white" style="text-decoration: none;"><h6><center>CATALOGUE</center></h6></a>
+      </div><hr>
+      <div class="div5">
+        <a href="{% url 'seller:recent' %}" class="navbar-vertical-content text-white" style="text-decoration: none;"><h6><center>RECENT ORDER</center></h6></a>
+      </div><hr>
+      <div class="div6">
+        <a href="{% url 'seller:sellchange' %}" class="navbar-vertical-content text-white" style="text-decoration: none;"><h6><center>CHANGE PASSWORD</center></h6></a>
+      </div><hr>
+      <div class="div7">
+        <a href="{% url 'seller:updatestock' %}" class="navbar-vertical-content text-white" style="text-decoration: none;"><h6><center>UPDATE STOCK</center></h6></a>
+      </div><hr>
+      <div class="div8">
+        <a href="{% url 'seller:addprod' %}" class="navbar-vertical-content text-white" style="text-decoration: none;"><h6><center>ADD PRODUCT</center></h6></a>
+      </div><hr>
+      <div class="div9">
+        <a href="{% url 'common:prohome' %}" class="navbar-vertical-content text-white" style="text-decoration: none;"><h6><center>LOGOUT</center></h6></a>
+      </div>
+    </div>
+    </div>
+
+    {% block content %}
+    
+     <div style="margin-left: 500px;padding: 50px;"><h3>WELCOME {{seller_prof.seller_name}}</h3></div>
+     <!-- <img src="{{seller_prof.seller_pic.url}}" alt=""> -->
+    {% endblock %}
+</body>
+</html>

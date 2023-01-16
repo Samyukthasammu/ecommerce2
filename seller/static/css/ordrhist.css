@@ -1,0 +1,12 @@
+.hist{
+    padding-left: 400px;
+    padding-right: 200px;
+}
+.table{
+    border-width: 3px;
+    border-style: double;
+}
+td{
+    width: max-content;
+    padding: 20px;
+}

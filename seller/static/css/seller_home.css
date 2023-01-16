@@ -1,0 +1,93 @@
+.parent{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-basis: auto;
+    float: left;
+    padding: 20px;
+    background-color: rgb(117, 224, 170);
+}
+.div2{
+    background-color: rgb(117, 224, 170);
+    padding: 10px;
+    color: white;
+}
+.div3{
+    background-color: rgb(117, 224, 170);
+    padding: 10px;
+    color: white;
+}
+.div4{
+    background-color: rgb(117, 224, 170);
+    padding: 10px;
+    color: white;
+}
+.div5{
+    background-color: rgb(117, 224, 170);
+    padding: 10px;
+    color: white;
+}
+.div6{
+    background-color: rgb(117, 224, 170);
+    padding: 10px;
+    color: white;
+} 
+.div7{
+    background-color: rgb(117, 224, 170);
+    padding: 10px;
+    color: white;
+} 
+.div8{
+    background-color: rgb(117, 224, 170);
+    padding: 10px;
+    color: white;
+}
+.div9{
+    background-color: rgb(117, 224, 170);
+    padding: 10px;
+    color: white;
+} 
+hr{
+    width: 200px;
+}
+
+#parent{
+    display: flex;
+    flex-direction: auto;
+    flex-wrap: nowrap;
+    flex-basis: auto;
+    /* height: 330px;
+    width: auto; */
+    padding-left: 100px;
+}
+
+#c1{
+    
+    margin: 10px;
+    text-align: center;
+    line-height: 50px;
+ 
+    padding: 10px;
+    
+
+}
+
+#c2{
+    
+    margin: 10px;
+    text-align: center;
+    line-height: 50px;
+  
+    padding: 10px;
+    
+}
+#c3{
+    
+    margin: 10px;
+    text-align: center;
+    line-height: 50px;
+    
+    padding: 10px;
+    
+
+}

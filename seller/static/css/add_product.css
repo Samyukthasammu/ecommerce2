@@ -1,0 +1,12 @@
+ .registerbtn {
+  background-color: rgb(6, 46, 23);  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 30%; 
+  border-radius: 20px; 
+  opacity: 0.9;
+  border-radius: 10px;
+}

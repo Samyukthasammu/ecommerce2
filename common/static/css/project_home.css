@@ -1,0 +1,32 @@
+.icon{
+    padding-left: 30px;
+}
+.navbar{
+    background-color: rgb(141, 204, 181);
+}
+#parent{
+    display: flex;
+    flex-direction: auto;
+    flex-wrap: nowrap;
+    flex-basis: auto;
+    width: auto;
+}
+
+#cc1{
+    width: 500px;
+   
+    text-align: center;
+    padding: 10px;
+    padding-left: 300px;
+    
+
+}
+
+#cc2{
+    width: 700px;
+    text-align: center;
+    padding: 10px;
+    padding-left: 400px;
+    
+
+}

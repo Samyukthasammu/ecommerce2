@@ -1,0 +1,41 @@
+{% extends 'customer/customer_home.html' %}
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block header %}
+
+
+{% endblock %}
+
+{% block content %}
+    <form action="" method="POST">
+        {% csrf_token %}
+        <input type="hidden" value="{{product.id}}" name="pid" id="">
+    <h2  style="color: rgb(7, 20, 16); margin-left: 300px; ">PRODUCT DETAILS</h2>
+    <div class="card" style="width: 300px; margin-left: 300px;">
+    
+    <img src="{{product.product_image.url}}" class="card-img opacity-20" alt="..." height="200px" width="100">
+    <div class="card-body">
+        <h5 class="card-title">{{product.product_name|title}}</h5>
+        <div class="card-text">Rs {{product.product_price}}</div>
+        <p class="card-text">{{product.description}}</p>
+        <button>ADD CART</button>{{ msg }}
+        <div>seller - {{product.seller.seller_name|upper}}</div>
+    <br>
+    </div>
+  </div>
+    </form>
+
+
+{% endblock %}
+    
+</body>
+</html>

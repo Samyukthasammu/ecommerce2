@@ -1,0 +1,60 @@
+{% extends 'customer/customer_home.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block header %}
+
+{% endblock %}
+
+{% block content %}
+<div style="color: rgb(52, 199, 150); margin-left: 500px;">
+    <h3><b><i>MY ORDER DETAILS</i></b> </h3>
+</div><hr>
+
+<div class="table-responsive">
+    <table class="table table- table-hover align-middle">
+        <thead>
+            <tr>
+                <th>#No</th>
+                <th>category Name</th>
+                <th>image</th>
+                <th>price</th>
+                <th>Quntity</th>
+                <th>date</th>
+                <th>Time</th>
+                <th>Satus</th>
+            </tr>
+
+        </thead>
+        <tbody class="table-group-divider">
+            <tr>
+                <td>1</td>
+                <td>Smart Watch</td>
+                <td><img src="{% static 'images/smartwatch.png' %}" alt="" height="50px"></td>
+                <td>₹2,799</td>
+                <td>1</td>
+                <td>12/22/2022</td>
+                <td>10.00</td>
+                <td>processing</td>
+               
+                
+            </tr>
+          
+
+        </tbody>
+            
+       
+        
+    </table>
+</div>
+{% endblock %}
+    
+</body>
+</html>

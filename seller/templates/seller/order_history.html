@@ -1,0 +1,80 @@
+{% extends 'seller/seller_home.html' %}
+{% load static %}
+
+
+  {% block header %}
+	<link href="{% static 'css/ordrhist.css' %}" rel="stylesheet">
+
+{% endblock %}
+    
+{% block content %}
+   <center>
+   <div class="hist"><br />
+
+  <div>
+    <h2>ORDER HISTORY</h2>
+  </div><br />
+
+<div class="ly">
+    <center>
+  <table class="table" data-sort="table" border="1">
+    <thead>
+      <tr>
+        <th>Confirm</th>
+        <th>Order Number</th>
+        <th>Item Name</th>
+        <th>Description</th>
+        <th>Date</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type="checkbox" class="bso"></td>
+        <td><a href="#" style="text-decoration: none; color: black;">10001</a></td>
+        <td>Smart Watch</td>
+        <td>Noise ColorFit Icon 2 1.8</td>
+        <td>19/12/2022</td>
+        <td>₹2,499</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" class="bso"></td>
+        <td><a href="#" style="text-decoration: none;color: black;">10002</a></td>
+        <td>Hand bag</td>
+        <td>Women Blue Tote</td>
+        <td>01/01/2023</td>
+        <td>₹1,147</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" class="bso"></td>
+        <td><a href="#" style="text-decoration: none;color: black;">10003</a></td>
+        <td>Face cream</td>
+        <td>LOTUS HERBALS WhiteGlow Skin Whitening</td>
+        <td>10/01/2023</td>
+        <td>₹249</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" class="bso"></td>
+        <td><a href="#" style="text-decoration: none; color: black;">10004</a></td>
+        <td>Jacket</td>
+        <td>Women Solid Quilted Jacket</td>
+        <td>04/01/2023</td>
+        <td>₹880</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" class="bso"></td>
+        <td><a href="#" style="text-decoration: none; color: black;">10005</a></td>
+        <td>Denim jeans</td>
+        <td>Men Jogger Fit Mid Rise Light Blue Jeans</td>
+        <td>01/02/2023</td>
+        <td>₹499</td>
+      </tr>
+    </tbody>
+  </table>
+</center>
+</div>
+</div>
+</center>
+{% endblock %}
+</body>
+</html>

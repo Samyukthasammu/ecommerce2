@@ -1,0 +1,32 @@
+.parent{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-basis: auto;
+    float: left;
+    padding: 15px;
+    background-color: rgb(117, 224, 170);
+}
+.div2{
+    background-color: rgb(117, 224, 170);
+    padding: 41px;
+    color: white;
+}
+.div3{
+    background-color: rgb(117, 224, 170);
+    padding: 41px;
+    color: white;
+}
+.div4{
+    background-color: rgb(117, 224, 170);
+    padding: 41px;
+    color: white;
+}
+.div5{
+    background-color: rgb(117, 224, 170);
+    padding: 42px;
+    color: white;
+} 
+hr{
+    width: 200px;
+}
